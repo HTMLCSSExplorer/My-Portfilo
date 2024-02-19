@@ -1,1 +1,13 @@
 @import url('/styles/config.css');
+/* TODO:  remove body background*/
+body {
+  background: gray;
+}
+.btn--primary {
+  background: var(--color-secondary);
+  color: white;
+}
+.btn--white {
+  background: white;
+  color: var(--color-text);
+}
