@@ -3,6 +3,8 @@
 body {
   background: gray;
 }
+
+/* Buttons */
 .btn--primary {
   background: var(--color-secondary);
   color: white;
@@ -10,4 +12,35 @@ body {
 .btn--white {
   background: white;
   color: var(--color-text);
+}
+/* Icon */
+.icon--primary {
+  background: var(--color-secondary);
+  .icon {
+    color: white;
+  }
+}
+.icon--white {
+  background: white;
+  .icon {
+    color: var(--color-secondary);
+  }
+}
+.list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.list .list__item {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+/* Text */
+.text-dark {
+  color: var(--color-text);
+}
+.text-light {
+  color: var(--color-accent);
 }
