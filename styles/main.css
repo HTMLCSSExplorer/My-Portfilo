@@ -1,9 +1,8 @@
 @import url('/styles/config.css');
 /* TODO:  remove body background*/
 body {
-  background: gray;
+  background: var(--color-primary);
 }
-
 /* Buttons */
 .btn--primary {
   background: var(--color-secondary);
@@ -12,6 +11,10 @@ body {
 .btn--white {
   background: white;
   color: var(--color-text);
+}
+.btn--transparrent {
+  background: transparent;
+  border: 1px solid var(--color-light-gray);
 }
 /* Icon */
 .icon--primary {
@@ -31,16 +34,38 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 1.5rem;
 }
 .list .list__item {
   font-size: 1.6rem;
   text-transform: capitalize;
 }
-/* Text */
-.text-dark {
-  color: var(--color-text);
+/* Header */
+.header {
+  padding: 1rem 2rem;
 }
-.text-light {
-  color: var(--color-accent);
+.nav-top {
+  display: grid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-top .list {
+  flex-grow: 5;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-logo--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0.5;
+  img {
+    width: 100%;
+  }
+}
+.menu-toggler {
+  width: 48px;
+  height: 48px;
 }

@@ -3,13 +3,14 @@
   --color-secondary: #ef6d58;
   --color-accent: #ffffff;
   --color-text: #391400;
+  --color-light-gray: #b1b2b9;
 }
 
 @font-face {
   font-family: Epilogue;
   src: url('/fonts/Epilogue-VariableFont_wght.ttf');
 }
-html{
+html {
   font-size: 62.5%;
 }
 *,
@@ -20,6 +21,7 @@ html{
   box-sizing: border-box;
   vertical-align: baseline;
 }
+
 h1,
 h2,
 h3,
@@ -47,6 +49,7 @@ body {
   font-size: 1.6rem;
   font-weight: normal;
   line-height: 2;
+  color: var(--color-text);
 }
 @media screen and (min-width: 950px) {
   h1 {
@@ -65,10 +68,22 @@ img {
 .list {
   list-style: none;
 }
+.list--inline {
+  display: flex;
+}
+.wrapper {
+  max-width: 350px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+}
 /* buttons */
 .btn {
   display: inline-block;
-  padding:1rem 5rem;
+  padding: 1rem 5rem;
   vertical-align: middle;
   white-space: nowrap;
   border-radius: 6px;
@@ -78,10 +93,22 @@ img {
   transition: transform 0.3s;
   outline: 0;
   border: 0;
+  text-align: center;
+
   &:hover,
   &:focus {
     transform: scale(1.05);
   }
+}
+/* Text */
+.text-dark {
+  color: var(--color-text);
+}
+.text-light {
+  color: var(--color-accent);
+}
+.text-light-gray {
+  color: var(--color-light-gray);
 }
 /* Icons */
 .icon--container {
@@ -104,4 +131,15 @@ img {
 }
 .icon--small {
   font-size: 1.5rem;
+}
+/* Collapsible */
+.collapsible--content {
+  max-height: 0;
+  opacity: 0;
+  transition: all  0.3s;
+}
+
+.collapsible.open .collapsible--content {
+  max-height: 100%;
+  opacity: 1;
 }
