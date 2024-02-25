@@ -90,19 +90,19 @@ body {
     margin-top: 1rem;
   }
 }
-.hero-img-desktop{
+.hero-img-desktop {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .hero-img-desktop{
-  display: block;
-}
-  .hero-img-mobile{
+  .hero-img-desktop {
+    display: block;
+  }
+  .hero-img-mobile {
     display: none;
   }
   .hero {
     display: grid;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     grid-template-columns: repeat(2, 1fr);
   }
   .hero--content,
