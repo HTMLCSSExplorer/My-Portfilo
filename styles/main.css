@@ -1,7 +1,7 @@
 @import url('/styles/config.css');
 /* TODO:  remove body background*/
 body {
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
 }
 /* Buttons */
 .btn--primary {
@@ -41,75 +41,57 @@ body {
 }
 /* Header */
 .header {
-  padding: 1rem 2rem;
-}
-.nav-top {
-  display: grid;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  background: var(--color-primary);
+  height: 100svh;
 }
 
-.nav-top .list {
-  flex-grow: 5;
+/* Navbar Top */
+.navbar {
+  padding-top: 1rem;
+}
+.navbar .wrapper {
+  padding: 2rem 2rem 0;
   display: flex;
   justify-content: space-around;
-}
-.nav-logo--container {
-  display: flex;
-  justify-content: center;
   align-items: center;
+}
+.header-logo-container {
   flex-grow: 0.5;
+  /* border: 1px solid red ; */
+}
+.navbar .list {
+  display: flex;
+  flex-grow: 5;
+  justify-content: space-around;
+  .list__item a {
+    color: var(--color-accent);
+    opacity: 0.7;
+    font-weight: 600;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.navbar .top-nav {
+  transition: transform 0.3s;
+  transform: scale(0);
+  transform-origin: left;
+}
+.navbar .max-width {
+  transform: scale(1);
+  
+  transform-origin: right;
+}
+
+.navbar .toggler-container {
+  flex-grow: 0.005;
+  cursor: pointer;
   img {
     width: 100%;
   }
 }
-.menu-toggler {
-  width: 48px;
-  height: 48px;
-}
-
-/* Hero */
-.hero {
+:where(.navbar .toggler-container, .header-logo-container) {
   display: flex;
-  flex-direction: column-reverse;
-  small {
-    letter-spacing: 3px;
-    font-size: 1.6rem;
-  }
-  .heading {
-    margin-top: 0.5rem;
-  }
-  .hero-tagline {
-    opacity: 0.6;
-    font-weight: 300;
-    margin-top: 1rem;
-  }
-  .btn {
-    margin-top: 1rem;
-  }
-}
-.hero-img-desktop {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .hero-img-desktop {
-    display: block;
-  }
-  .hero-img-mobile {
-    display: none;
-  }
-  .hero {
-    display: grid;
-    /* border: 1px solid red; */
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .hero--content,
-  .hero--image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-  }
+  align-items: center;
 }

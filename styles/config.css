@@ -59,6 +59,10 @@ body {
     font-size: 5.6rem;
   }
 }
+/* Utilities */
+.default{
+  background: var(--color-secondary);
+}
 a {
   text-decoration: none;
 }
