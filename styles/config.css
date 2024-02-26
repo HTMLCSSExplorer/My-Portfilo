@@ -60,7 +60,7 @@ body {
   }
 }
 /* Utilities */
-.default{
+.default {
   background: var(--color-secondary);
 }
 a {
