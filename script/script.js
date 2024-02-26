@@ -3,6 +3,8 @@ const clickables = document.querySelectorAll('.clickable');
 const topNav = document.querySelector('.top-nav');
 const togglerImg = document.querySelector('.toggler');
 const togglerContainer = document.querySelector('.toggler-container');
+const menuContainer = document.querySelector('.menu-container');
+const hero = document.querySelector('.hero');
 
 // Collapsibles
 
@@ -24,6 +26,8 @@ function topNavAnimation() {
     togglerContainer.addEventListener('click', () => {
       topNav.classList.toggle('active');
       topNav.classList.toggle('topnav-max-heith');
+      menuContainer.classList.toggle('expanded');
+      hero.classList.toggle('up');
     });
   }
 }

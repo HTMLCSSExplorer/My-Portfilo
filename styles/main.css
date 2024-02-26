@@ -42,7 +42,6 @@ body {
 /* Header */
 .header {
   background: var(--color-primary);
-  height: 100svh;
 }
 
 /* Navbar Top */
@@ -144,4 +143,22 @@ body {
     top: 3rem;
     right: 0.75rem;
   }
+}
+.toggler-container {
+  transform: scale(1);
+  display: block;
+  max-height: 100%;
+  overflow: auto;
+}
+/*Hero  */
+.hero {
+  transition: all 0.3s;
+}
+.hero.up {
+  margin-top: -150px;
+  transition-delay: 0.3s;
+}
+
+.hero-btn-container {
+  margin-top: 2rem;
 }

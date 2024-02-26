@@ -63,6 +63,15 @@ body {
 .default {
   background: var(--color-secondary);
 }
+.grid{
+  display: grid;
+}
+.grid1x2{
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid2x1{
+  grid-template-columns: repeat(2,1fr);
+}
 a {
   text-decoration: none;
 }
@@ -105,9 +114,16 @@ img {
   }
 }
 /* Text */
+.text-capitalize{
+  text-transform: capitalize;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
 .text-dark {
   color: var(--color-text);
 }
+
 .text-light {
   color: var(--color-accent);
 }
