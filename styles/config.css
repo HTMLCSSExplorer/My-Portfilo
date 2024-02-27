@@ -66,11 +66,16 @@ body {
 .grid{
   display: grid;
 }
-.grid1x2{
+.grid2x1{
   grid-template-rows: repeat(2, 1fr);
 }
-.grid2x1{
+.grid1x2{
   grid-template-columns: repeat(2,1fr);
+}
+.gridAuto1fr{
+  .grid-test {
+  grid-template-rows: auto 1fr;
+}
 }
 a {
   text-decoration: none;
@@ -85,12 +90,12 @@ img {
   display: flex;
 }
 .wrapper {
-  max-width: 350px;
+  max-width: 80svw;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .wrapper {
-    max-width: 1500px;
+    max-width: 80svw;
   }
 }
 /* buttons */
@@ -103,7 +108,7 @@ img {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
-  transition: transform 0.3s;
+  transition: all  0.3s;
   outline: 0;
   border: 0;
   text-align: center;

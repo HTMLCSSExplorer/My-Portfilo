@@ -153,12 +153,52 @@ body {
 /*Hero  */
 .hero {
   transition: all 0.3s;
+  padding-bottom: 6rem;
 }
 .hero.up {
   margin-top: -150px;
   transition-delay: 0.3s;
 }
-
+@media screen and (min-width: 768px) {
+  .hero.up {
+    margin-top: 0;
+  }
+}
 .hero-btn-container {
   margin-top: 2rem;
+}
+.hero-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 5rem;
+  }
+  .gridAuto1fr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    gap: 5rem;
+    > :first-child {
+      order: 2;
+    }
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.hero-heading::before {
+  content: 'Mojtaba ghanidel';
+  font-size: 1.6rem;
+  color: var(--color-secondary);
+  display: block;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
