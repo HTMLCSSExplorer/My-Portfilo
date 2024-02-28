@@ -4,6 +4,7 @@
   --color-accent: #ffffff;
   --color-text: #391400;
   --color-light-gray: #b1b2b9;
+  --color-white: #fdf0e9;
 }
 
 @font-face {
@@ -63,19 +64,19 @@ body {
 .default {
   background: var(--color-secondary);
 }
-.grid{
+.grid {
   display: grid;
 }
-.grid2x1{
+.grid2x1 {
   grid-template-rows: repeat(2, 1fr);
 }
-.grid1x2{
-  grid-template-columns: repeat(2,1fr);
+.grid1x2 {
+  grid-template-columns: repeat(2, 1fr);
 }
-.gridAuto1fr{
+.gridAuto1fr {
   .grid-test {
-  grid-template-rows: auto 1fr;
-}
+    grid-template-rows: auto 1fr;
+  }
 }
 a {
   text-decoration: none;
@@ -108,7 +109,7 @@ img {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
-  transition: all  0.3s;
+  transition: all 0.3s;
   outline: 0;
   border: 0;
   text-align: center;
@@ -119,11 +120,14 @@ img {
   }
 }
 /* Text */
-.text-capitalize{
+.text-capitalize {
   text-transform: capitalize;
 }
-.text-uppercase{
+.text-uppercase {
   text-transform: uppercase;
+}
+.text-center{
+  text-align: center;
 }
 .text-dark {
   color: var(--color-text);
