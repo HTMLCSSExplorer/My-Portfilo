@@ -126,8 +126,11 @@ img {
 .text-uppercase {
   text-transform: uppercase;
 }
-.text-center{
+.text-center {
   text-align: center;
+}
+.text-left {
+  text-align: left;
 }
 .text-dark {
   color: var(--color-text);
