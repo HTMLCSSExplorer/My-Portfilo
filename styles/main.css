@@ -266,10 +266,78 @@ body {
 .service-after-text::first-letter {
   text-transform: uppercase;
 }
-.service-after-link{
-     color: #391400;
-     text-transform: capitalize;
-     font-weight: 606;
-     padding-left: 1rem;
-
+.service-after-link {
+  color: #391400;
+  text-transform: capitalize;
+  font-weight: 606;
+  padding-left: 1rem;
+}
+/* Portfolop */
+.portfolio {
+  background: var(--color-primary);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.portfolio-heading::before {
+  content: 'portfolio';
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: block;
+  color: var(--color-secondary);
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  .btn {
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+  }
+}
+.portfilos {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .portfilos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.portfilo {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1rem 2rem;
+}
+.portfilo-1 {
+  background: url('/img/Bitmap.svg') no-repeat center center/cover;
+}
+.portfilo-2 {
+  background: url('/img/Bitmap1.svg') no-repeat center center/cover;
+}
+.portfilo-3 {
+  background: url('/img/Bitmap2.svg') no-repeat center center/cover;
+}
+.portfilo-tag {
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
 }
