@@ -178,3 +178,11 @@ img {
   max-height: 100%;
   opacity: 1;
 }
+.fa-calendar,
+.fa-briefcase {
+  color: white;
+  font-size: 4rem;
+}
+.break-line{
+  content: '<br>';
+}

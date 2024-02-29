@@ -1,6 +1,5 @@
 @import url('/styles/config.css');
 
-
 /* TODO:  remove body background*/
 body {
   /* background: var(--color-primary); */
@@ -342,4 +341,93 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   font-size: 1rem;
+}
+/* Blog */
+.blog {
+  background: #fdf0e9;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.blog-content {
+  display: flex;
+  flex-direction: column;
+}
+.blog-heading {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.blog-heading::before {
+  content: 'Mojtaba ghanidel';
+  font-size: 1.6rem;
+  color: var(--color-secondary);
+  display: block;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.blog-sub-heading {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.blog-btn-container {
+  padding-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .blog-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    place-content: center;
+    place-items: center;
+  }
+  .blog-text {
+    margin-right: 20rem;
+  }
+}
+.blog-bottom {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.blog-bottom-grids {
+  border: 1px solid #f3d1bf;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  border-radius: 2px;
+  margin-top: 1px;
+}
+.blog-grid-content-container {
+  display: flex;
+  flex-direction: column;
+}
+.blog-grid-heading {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.blog-grid-text {
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-bottom {
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+  }
+  .blog-bottom-grids {
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .blog-grid-content-container {
+    padding-left: 5rem;
+  }
 }
