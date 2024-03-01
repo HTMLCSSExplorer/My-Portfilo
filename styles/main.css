@@ -34,7 +34,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 .list .list__item {
   font-size: 1.6rem;
@@ -429,5 +428,114 @@ body {
   }
   .blog-grid-content-container {
     padding-left: 5rem;
+  }
+}
+/* Feature */
+.feature {
+  padding-top: var(--padding-bottom);
+
+  padding-bottom: 2rem;
+}
+.feature-content {
+  position: relative;
+}
+.feature-heading::before {
+  content: 'Features';
+  font-size: 1.6rem;
+  color: var(--color-secondary);
+  display: block;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 4px;
+}
+.feature-heading {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.feature-text {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.feature-list-container .list .list__item {
+  justify-content: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.feature-list-container .list {
+  margin-top: 5rem;
+  margin-bottom: 15rem;
+}
+@media screen and (min-width: 768px) {
+  .feature-grid {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Get Started */
+.get-started {
+  background: #f9e5da;
+  padding-top: 5rem;
+  .wrapper {
+  }
+}
+.get-started-content {
+  display: flex;
+  flex-direction: column;
+}
+.get-started-heading-container {
+  .btn {
+    margin-top: 2rem;
+  }
+}
+.get-started-heading {
+  padding-top: 2rem;
+}
+.get-started-heading::before {
+  content: 'get started';
+  font-size: 1.6rem;
+  color: var(--color-secondary);
+  display: block;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 4px;
+}
+.get-started-text-container {
+  padding-top: 5rem;
+}
+.get-started-content-text {
+  letter-spacing: 1.5px;
+}
+.get-started-img-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .get-started-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
+  }
+  .get-started-heading-container {
+  }
+  .get-started-text-container {
+    padding: 0;
+  }
+  .get-started-img-container {
+    img {
+      width: 100%;
+    }
   }
 }
