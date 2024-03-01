@@ -219,3 +219,27 @@ img {
 .fa-gift {
   font-size: 4rem;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+.card--white {
+  background: white;
+}
+.card--transparrent {
+  background: transparent;
+}
+.fa-star {
+  color: gold;
+}
+
+.btn--contaier {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
